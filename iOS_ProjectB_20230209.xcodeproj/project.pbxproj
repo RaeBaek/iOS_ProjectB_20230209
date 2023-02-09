@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		140AF8572994ED9600E0B18D /* AddInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140AF8562994ED9600E0B18D /* AddInfoViewController.swift */; };
+		140AF85A2995076000E0B18D /* UserInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140AF8592995076000E0B18D /* UserInformation.swift */; };
 		142436E42994A3760086A8EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142436E32994A3760086A8EC /* AppDelegate.swift */; };
 		142436E62994A3760086A8EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142436E52994A3760086A8EC /* SceneDelegate.swift */; };
-		142436E82994A3760086A8EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142436E72994A3760086A8EC /* ViewController.swift */; };
+		142436E82994A3760086A8EC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142436E72994A3760086A8EC /* LoginViewController.swift */; };
 		142436EB2994A3760086A8EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142436E92994A3760086A8EC /* Main.storyboard */; };
 		142436ED2994A3770086A8EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 142436EC2994A3770086A8EC /* Assets.xcassets */; };
 		142436F02994A3770086A8EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142436EE2994A3770086A8EC /* LaunchScreen.storyboard */; };
+		142436F82994AC900086A8EC /* SignUpBasicInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142436F72994AC900086A8EC /* SignUpBasicInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		140AF8562994ED9600E0B18D /* AddInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInfoViewController.swift; sourceTree = "<group>"; };
+		140AF8592995076000E0B18D /* UserInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformation.swift; sourceTree = "<group>"; };
 		142436E02994A3760086A8EC /* iOS_ProjectB_20230209.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_ProjectB_20230209.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		142436E32994A3760086A8EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		142436E52994A3760086A8EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		142436E72994A3760086A8EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		142436E72994A3760086A8EC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		142436EA2994A3760086A8EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		142436EC2994A3770086A8EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		142436EF2994A3770086A8EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		142436F12994A3770086A8EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		142436F72994AC900086A8EC /* SignUpBasicInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpBasicInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		140AF8582994ED9E00E0B18D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				142436E72994A3760086A8EC /* LoginViewController.swift */,
+				142436F72994AC900086A8EC /* SignUpBasicInfoViewController.swift */,
+				140AF8562994ED9600E0B18D /* AddInfoViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		140AF85B2995076300E0B18D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				140AF8592995076000E0B18D /* UserInformation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		142436D72994A3760086A8EC = {
 			isa = PBXGroup;
 			children = (
@@ -58,7 +82,8 @@
 			children = (
 				142436E32994A3760086A8EC /* AppDelegate.swift */,
 				142436E52994A3760086A8EC /* SceneDelegate.swift */,
-				142436E72994A3760086A8EC /* ViewController.swift */,
+				140AF85B2995076300E0B18D /* Model */,
+				140AF8582994ED9E00E0B18D /* Controllers */,
 				142436E92994A3760086A8EC /* Main.storyboard */,
 				142436EC2994A3770086A8EC /* Assets.xcassets */,
 				142436EE2994A3770086A8EC /* LaunchScreen.storyboard */,
@@ -138,7 +163,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				142436E82994A3760086A8EC /* ViewController.swift in Sources */,
+				142436E82994A3760086A8EC /* LoginViewController.swift in Sources */,
+				140AF85A2995076000E0B18D /* UserInformation.swift in Sources */,
+				140AF8572994ED9600E0B18D /* AddInfoViewController.swift in Sources */,
+				142436F82994AC900086A8EC /* SignUpBasicInfoViewController.swift in Sources */,
 				142436E42994A3760086A8EC /* AppDelegate.swift in Sources */,
 				142436E62994A3760086A8EC /* SceneDelegate.swift in Sources */,
 			);
@@ -290,6 +318,7 @@
 				DEVELOPMENT_TEAM = DD66GTY4AT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOS_ProjectB_20230209/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "사진을 가져와야 합니다. 그 이유는 회원가입에 필요한 이미지를 설정하기 위해서 입니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -318,6 +347,7 @@
 				DEVELOPMENT_TEAM = DD66GTY4AT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOS_ProjectB_20230209/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "사진을 가져와야 합니다. 그 이유는 회원가입에 필요한 이미지를 설정하기 위해서 입니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
