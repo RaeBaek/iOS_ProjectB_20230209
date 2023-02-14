@@ -84,7 +84,8 @@ class AddInfoViewController: UIViewController {
     }
     
     @IBAction func signUpButton(_ sender: UIButton) {
-        self.navigationController?.popToRootViewController(animated: true)
+//        self.navigationController?.popToRootViewController(animated: true)
+        self.dismiss(animated: true)
         // rootViewController로 이동 후 다시 회원가입 버튼을 누르면
         // 번호와 생일이 싱글톤 정보에 남기 때문에
         // nil 값을 할당하여 임시적으로 정보 제거

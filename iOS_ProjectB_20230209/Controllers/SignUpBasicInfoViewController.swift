@@ -40,14 +40,14 @@ class SignUpBasicInfoViewController: UIViewController {
     
     //MARK: textFieldDelegate Set Method
     func textFieldDelegate() {
-        idTextField.delegate = self
-        passwordTextField.delegate = self
-        passwordVerificationTextField.delegate = self
+        idTextField?.delegate = self
+        passwordTextField?.delegate = self
+        passwordVerificationTextField?.delegate = self
         
-        passwordTextField.textContentType = .password
-        passwordTextField.isSecureTextEntry = true
-        passwordVerificationTextField.textContentType = .password
-        passwordVerificationTextField.isSecureTextEntry = true
+        passwordTextField?.textContentType = .password
+        passwordTextField?.isSecureTextEntry = true
+        passwordVerificationTextField?.textContentType = .password
+        passwordVerificationTextField?.isSecureTextEntry = true
     }
     
     //MARK: - @IBOActions

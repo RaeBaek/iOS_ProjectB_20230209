@@ -34,5 +34,13 @@ class LoginViewController: UIViewController {
         passwordTextField.textContentType = .password
         passwordTextField.isSecureTextEntry = true
     }
+    
+    //MARK: @IBActions
+//    @IBAction func signUpButton(_ sender: UIButton) {
+//        let nextViewController = SignUpBasicInfoViewController()
+//        nextViewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+//        self.present(nextViewController, animated: true, completion: nil)
+//        print("yes")
+//    }
 }
 
